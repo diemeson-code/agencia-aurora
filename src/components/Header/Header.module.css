@@ -1,0 +1,108 @@
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #eeeaf5;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 84px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo {
+  color: #21143b;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ff8a4c;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  color: #625b70;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #8b5cf6;
+}
+
+.contactButton {
+  padding: 13px 20px;
+  border-radius: 999px;
+  background: #21143b;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.contactButton:hover {
+  background: #7045c5;
+}
+
+.contactButton span {
+  margin-left: 8px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    min-height: 72px;
+    padding: 0 18px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .contactButton {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
